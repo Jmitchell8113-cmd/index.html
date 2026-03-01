@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background: black;
+}
+
+.container {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+.form-section,
+.preview-section {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background: #222;
+  color: white;
+  border: 1px solid #333;
+}
+
+.buttons button {
+  margin: 10px 10px 0 0;
+  padding: 10px 15px;
+  background: hotpink;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #ff1493;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.car {
+  display: flex;
+  margin-top: 20px;
+  height: 150px;
+  position: relative;
+}
+
+.front {
+  flex: 1;
+  background: hotpink;
+}
+
+.rear {
+  flex: 1;
+  background: black;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

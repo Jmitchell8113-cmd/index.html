@@ -1,0 +1,29 @@
+let currentStyle = "Half & Half";
+
+function setStyle(style) {
+  currentStyle = style;
+  document.getElementById("styleText").textContent = style;
+
+  if (style === "Half & Half") {
+    document.querySelector(".front").style.background = "hotpink";
+    document.querySelector(".rear").style.background = "black";
+  }
+
+  if (style === "Loud") {
+    document.querySelector(".front").style.background = "hotpink";
+    document.querySelector(".rear").style.background = "hotpink";
+  }
+
+  if (style === "Luxury") {
+    document.querySelector(".front").style.background = "black";
+    document.querySelector(".rear").style.background = "black";
+  }
+}
+
+document.getElementById("upload").addEventListener("change", function (event) {
+  const reader = new FileReader();
+  reader.onload = function () {
+    document.getElementById("overlay").src = reader.result;
+  };
+  reader.readAsDataURL(event.target.files[0]);
+});

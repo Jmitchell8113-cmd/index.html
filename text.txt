@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tesla Custom Wraps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Tesla Custom Wrap Studio</h1>
+  <p>Design Your Model Y Wrap</p>
+</header>
+
+<section class="container">
+
+  <div class="form-section">
+    <h2>Vehicle Details</h2>
+
+    <label>Model</label>
+    <select id="model">
+      <option>Model Y</option>
+      <option>Model 3</option>
+      <option>Model S</option>
+      <option>Model X</option>
+    </select>
+
+    <label>Year</label>
+    <select id="year">
+      <option>2023</option>
+      <option>2024</option>
+      <option>2025</option>
+    </select>
+
+    <label>Factory Color</label>
+    <select id="color">
+      <option>White</option>
+      <option>Black</option>
+      <option>Gray</option>
+      <option>Red</option>
+      <option>Blue</option>
+    </select>
+
+    <label>Wrap Style</label>
+    <div class="buttons">
+      <button onclick="setStyle('Half & Half')">Half & Half</button>
+      <button onclick="setStyle('Loud')">Loud</button>
+      <button onclick="setStyle('Luxury')">Luxury</button>
+    </div>
+
+    <label>Upload Design</label>
+    <input type="file" id="upload" accept="image/*">
+
+    <button class="submit">Submit Request</button>
+  </div>
+
+  <div class="preview-section">
+    <h2>Live Preview</h2>
+    <div class="car">
+      <div class="front"></div>
+      <div class="rear"></div>
+      <img id="overlay">
+    </div>
+
+    <div class="meta">
+      <p><strong>Style:</strong> <span id="styleText">Half & Half</span></p>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
